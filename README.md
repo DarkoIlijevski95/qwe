@@ -32,7 +32,7 @@ Windows Forms Project By: Antonio Antovski, Ivan Stoickov and Darko Ilijevski
 Во формата `Matematika` со `Random` објект се генерира бројот што треба да го добиеме како и други шест броеви со чија помош треба да стигнеме до тој број. Со користење на `VBScript` скрипта од `Microsoft Script Control` библиотеката се пресметува внесениот израз од страна на корисникот.
 Во функцијата `private void btnKraj_Click(object sender, EventArgs e)` се евалуира изразот и се додаваат поени зависно од тоа дали е добиен бараниот број, број кој се разликува најмногу за 5 од бараниот број или е добиен сосема погрешен резултат. 
 И оваа игра е временски ограничена со Timer контрола.
-```c# 
+```c#
 	private void btnKraj_Click(object sender, EventArgs e)
         {
             MSScriptControl.ScriptControl sc = new MSScriptControl.ScriptControl();
@@ -71,7 +71,7 @@ Windows Forms Project By: Antonio Antovski, Ivan Stoickov and Darko Ilijevski
  class Answers {
         private List<string> answers;
         private string right;
-       
+
         public Answers(string fi, string s, string t, string f) {
             answers = new List<string>()
             {
@@ -149,8 +149,9 @@ Windows Forms Project By: Antonio Antovski, Ivan Stoickov and Darko Ilijevski
         }
     }
 ```
-Со `KeyPress` функцијата се проверува текстот што корисникот го внесува во еден TextBox, ако текстот е поимот што се бара позадината на тој TextBox се променува во друга боја. Ако тоа не е случај се испразнува содржината на TextBox-от за следниот обид на корисникот. Доколку корисникот го погоди поимот зависно од бројот на обиди му се доделуваат поени. И оваа игра е временски ограничена.
+Со `KeyPress(object sender, KeyPressEventArgs e)` функцијата се проверува текстот што корисникот го внесува во еден TextBox, ако текстот е поимот што се бара позадината на тој TextBox се променува во друга боја. Ако тоа не е случај се испразнува содржината на TextBox-от за следниот обид на корисникот. Доколку корисникот го погоди поимот зависно од бројот на обиди му се доделуваат поени. И оваа игра е временски ограничена.
 При повик на функцијата `btnKrajClick(object sender, EventArgs e)` се запишува резултатот на корисникот во датотеката "rezultati.txt" и се прикажува нова форма `Kraj` во која има листа на сите дотогаш остварени резултати.
 
 ##3. Упатство за употреба
-...
+###3.1 Нова игра
+![GitHub Logo](/sliki/pocetna.png)
